@@ -33,7 +33,7 @@ const About = () => {
     {
       name: "Alex Rivera",
       role: "CEO & Creative Director",
-      image: "https://i.pravatar.cc/300?img=12",
+      image: "",
       social: {
         instagram: "#",
         linkedin: "#",
@@ -43,7 +43,7 @@ const About = () => {
     {
       name: "Sarah Chen",
       role: "Head of Strategy",
-      image: "https://i.pravatar.cc/300?img=45",
+      image: "",
       social: {
         instagram: "#",
         linkedin: "#",
@@ -53,7 +53,7 @@ const About = () => {
     {
       name: "Marcus Johnson",
       role: "Lead Developer",
-      image: "https://i.pravatar.cc/300?img=33",
+      image: "",
       social: {
         instagram: "#",
         linkedin: "#",
@@ -63,7 +63,7 @@ const About = () => {
     {
       name: "Emma Davis",
       role: "Creative Lead",
-      image: "https://i.pravatar.cc/300?img=49",
+      image: "",
       social: {
         instagram: "#",
         linkedin: "#",

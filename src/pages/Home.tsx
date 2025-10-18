@@ -106,23 +106,25 @@ const Home = () => {
             {services.map((service, index) => (
               <AnimatedSection key={index} delay={index * 0.2} direction="up">
                 <motion.div
-                  className="bg-card border border-electric-blue/20 rounded-2xl p-8 hover:border-electric-blue transition-all cursor-pointer group"
-                  whileHover={{ scale: 1.05, y: -10 }}
+                  className="bg-card border border-electric-blue/20 rounded-2xl p-8 hover:border-electric-blue transition-all cursor-pointer group h-full flex flex-col"
+                  whileHover={{ scale: 1.02, y: -5 }}
                   transition={{ duration: 0.3 }}
                 >
-                  <div className="mb-6 overflow-hidden rounded-lg">
+                  <div className="mb-6 overflow-hidden rounded-lg aspect-video">
                     <img 
                       src={service.icon} 
                       alt={service.title}
-                      className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     />
                   </div>
-                  <h3 className="text-2xl font-bold mb-4 text-electric-blue">
-                    {service.title}
-                  </h3>
-                  <p className="text-muted-foreground">
-                    {service.description}
-                  </p>
+                  <div className="flex-1 flex flex-col">
+                    <h3 className="text-2xl font-bold mb-4 text-electric-blue">
+                      {service.title}
+                    </h3>
+                    <p className="text-muted-foreground mt-auto">
+                      {service.description}
+                    </p>
+                  </div>
                 </motion.div>
               </AnimatedSection>
             ))}

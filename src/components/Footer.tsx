@@ -67,7 +67,7 @@ export const Footer = () => {
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-electric-blue/20 flex flex-col md:flex-row justify-between items-center">
           <p className="text-muted-foreground text-sm">
-            © 2025 DigitalTikka. Built with ❤️ by Lovable.dev
+            © 2025 DigitalTikka. Built by Sociqo
           </p>
 
           {/* Scroll to Top */}

@@ -36,13 +36,13 @@ const Contact = () => {
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567",
+      value: "+91 12345 67890",
+      href: "tel:+911234567890",
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "San Francisco, CA",
+      value: "India",
       href: "#",
     },
   ];
@@ -196,7 +196,7 @@ const Contact = () => {
                     <div className="absolute inset-0 flex items-center justify-center">
                       <div className="text-center">
                         <MapPin className="w-12 h-12 text-electric-blue mx-auto mb-2" />
-                        <p className="text-lg font-semibold">San Francisco, CA</p>
+                        <p className="text-lg font-semibold"> India </p>
                         <p className="text-sm text-muted-foreground">Serving clients worldwide</p>
                       </div>
                     </div>

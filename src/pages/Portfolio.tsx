@@ -24,7 +24,7 @@ const Portfolio = () => {
       id: 1,
       title: "E-commerce Revolution",
       category: "Web Development",
-      image: portfolio1,
+      image: "",
       description: "A complete e-commerce platform redesign that transformed user experience and boosted conversions by 250%.",
       results: [
         "250% increase in conversion rate",
@@ -38,7 +38,7 @@ const Portfolio = () => {
       id: 2,
       title: "Fashion Forward Campaign",
       category: "Social Media",
-      image: portfolio2,
+      image: "",
       description: "A multi-platform social media campaign that created viral moments and built a thriving community.",
       results: [
         "5M+ total reach",
@@ -52,7 +52,7 @@ const Portfolio = () => {
       id: 3,
       title: "Startup Branding Success",
       category: "Brand Strategy",
-      image: portfolio3,
+      image: "",
       description: "Complete brand identity development for a tech startup, establishing market presence and investor confidence.",
       results: [
         "Successfully raised $2M in funding",
@@ -66,7 +66,7 @@ const Portfolio = () => {
       id: 4,
       title: "Food Delivery Growth",
       category: "Paid Advertising",
-      image: portfolio1,
+      image: "",
       description: "Strategic paid advertising campaign across Meta and Google that scaled a local food delivery service.",
       results: [
         "400% increase in orders",
@@ -80,7 +80,7 @@ const Portfolio = () => {
       id: 5,
       title: "Fitness App Launch",
       category: "Content Creation",
-      image: portfolio2,
+      image: "",
       description: "Comprehensive content strategy and creation for a fitness app launch, including video production and social content.",
       results: [
         "100K app downloads in launch month",
@@ -94,7 +94,7 @@ const Portfolio = () => {
       id: 6,
       title: "Travel Agency Transformation",
       category: "Full Service",
-      image: portfolio3,
+      image: "",
       description: "End-to-end digital transformation including branding, web development, and marketing for a travel agency.",
       results: [
         "500% increase in bookings",
@@ -133,12 +133,12 @@ const Portfolio = () => {
             {projects.map((project, index) => (
               <AnimatedSection key={project.id} delay={index * 0.1}>
                 <motion.div
-                  className="group relative bg-card border border-electric-blue/20 rounded-2xl overflow-hidden cursor-pointer"
-                  whileHover={{ y: -10 }}
+                  className="group relative bg-card border border-electric-blue/20 rounded-2xl overflow-hidden cursor-pointer h-full flex flex-col"
+                  whileHover={{ y: -5 }}
                   transition={{ duration: 0.3 }}
                   onClick={() => setSelectedProject(project)}
                 >
-                  <div className="aspect-[4/3] overflow-hidden">
+                  <div className="aspect-[4/3] overflow-hidden flex-shrink-0">
                     <img
                       src={project.image}
                       alt={project.title}
@@ -158,12 +158,12 @@ const Portfolio = () => {
                     </div>
                   </motion.div>
 
-                  <div className="p-6">
+                  <div className="p-6 flex-1 flex flex-col">
                     <div className="text-electric-blue text-sm font-semibold mb-2">
                       {project.category}
                     </div>
                     <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
-                    <p className="text-muted-foreground line-clamp-2">
+                    <p className="text-muted-foreground line-clamp-2 mt-auto">
                       {project.description}
                     </p>
                   </div>
